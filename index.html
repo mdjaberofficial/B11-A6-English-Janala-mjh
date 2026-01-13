@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Janala</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- poppins AND Hind Siliguri
+    font linkup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tiro Bangla font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+
+
+    <style>
+        .hind-siliguri-regular {
+            font-family: "Hind Siliguri", sans-serif;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .tiro-bangla-regular {
+            font-family: "Tiro Bangla", serif;
+        }
+
+        .active {
+            background: #3b25c1;
+            color: white;
+
+        }
+    </style>
+</head>
+<body class="poppins-regular">
+
+    <!-- nav section -->
+    <section id="navbar" class="backdrop-blur-md backdrop-brightness-150 shadow-xl fixed top-0 left-0 w-full z-1000 ">
+        <nav class="w-10/12 mx-auto py-6 flex justify-between  ">
+            <a href="#headerSection">
+                <div class="flex items-center">
+                    <h2 class="poppins-regular font-semibold">English</h2>
+                    <img src="assets/logo.png" alt="English Janala logo">
+                    <h2 class="tiro-bangla-regular font-semibold">জানালা</h2>
+                </div>
+            </a>
+            <div class="space-x-4 hidden md:block">
+                <a href="#questionsSection"><button class="btn  btn-outline btn-primary"> <svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-5 hover:text-white">
+                            <path fill-rule="evenodd"
+                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        FAQ</button></a>
+                <a href="#learnSection"><button class="btn  btn-outline btn-primary"> <svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="size-5 hover:text-white">
+                            <path
+                                d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                        </svg>
+                        Learn</button></a>
+                <button id="logout-btn" class="btn btn-outline btn-primary"> <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="currentColor" class="size-5 hover:text-white">
+                        <path fill-rule="evenodd"
+                            d="M16.5 3.75a1.5 1.5 0 0 1 1.5 1.5v13.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V15a.75.75 0 0 0-1.5 0v3.75a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3V9A.75.75 0 1 0 9 9V5.25a1.5 1.5 0 0 1 1.5-1.5h6ZM5.78 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06l-1.72-1.72H15a.75.75 0 0 0 0-1.5H4.06l1.72-1.72a.75.75 0 0 0 0-1.06Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    Logout</button>
+            </div>
+
+            <div class="md:hidden block ">
+                <div class="drawer drawer-end">
+                    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+
+                        <label for="my-drawer-4" class="drawer-button  "><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="size-12 text-[#3b25c1]">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg></label>
+                    </div>
+
+                    <!-- mobile navbar -->
+
+                    <div class="drawer-side">
+                        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-base-200 text-base-content min-h-full space-y-4  p-4">
+
+                            <li><a href="#questionsSection"><button class="btn w-30 -ml-3 btn-outline btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-5 hover:text-white">
+                                            <path fill-rule="evenodd"
+                                                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        FAQ</button></a></li>
+
+                            <li><a href="#learnSection"><button class="btn w-30 -ml-3 btn-outline btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="size-5 hover:text-white">
+                                            <path
+                                                d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                                        </svg>
+                                        Learn</button></a></li>
+
+                            <li><button id="logout-btn2" class="btn btn-outline w-30 btn-primary"><svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-5 hover:text-white">
+                                        <path fill-rule="evenodd"
+                                            d="M16.5 3.75a1.5 1.5 0 0 1 1.5 1.5v13.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5V15a.75.75 0 0 0-1.5 0v3.75a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5.25a3 3 0 0 0-3-3h-6a3 3 0 0 0-3 3V9A.75.75 0 1 0 9 9V5.25a1.5 1.5 0 0 1 1.5-1.5h6ZM5.78 8.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06l-1.72-1.72H15a.75.75 0 0 0 0-1.5H4.06l1.72-1.72a.75.75 0 0 0 0-1.06Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Logout</button></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- header section -->
+    <header id="headerSection"
+        class="w-10/12 mx-auto py-4 md:py-24 flex md:justify-between flex-col-reverse md:flex-row items-center gap-10">
+
+        <div class="space-y-6">
+            <h1 class="font-bold text-5xl "><span class="text-[#00bcff] ">English</span> is Easy!!</h1>
+            <p class="hind-siliguri-regular text-[#18181B] text-2xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি
+                যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য
+                একটি Level এ</p>
+            <fieldset class="fieldset space-y-2 ">
+                <input id="enterName" type="text" class="input" placeholder="Enter Your Name" />
+                <input id="enterPass" type="number" class="input" placeholder="Enter Login Code (123456)" />
+            </fieldset>
+            <button id="getStart-btn" class="btn btn-primary">Get Started</button>
+        </div>
+
+        <div><img src="assets/hero-student.png" alt=""></div>
+    </header>
+
+    <main>
+        <!-- Let's Learn Vocabularies section -->
+
+        <section id="learnSection" class="md:w-10/12 mx-auto text-center mt-20 pt-40 md:mb-52">
+            <h1 class="font-bold text-4xl text-center mb-4"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+            </h1>
+            <div id="learnBtn" class="mt-6 w-10/12 mx-auto flex flex-wrap gap-4 justify-center">
+
+            </div>
+
+            <div id="spiner" class="spiner col-span-full mt-8 hidden ">
+                <span class="loading loading-ring loading-lg"></span>
+                <span class="loading loading-ring loading-lg"></span>
+                <span class="loading loading-ring loading-lg"></span>
+            </div>
+
+            <div id="wordCardBox"
+                class=" mt-8 mb-32 rounded-xl py-8 bg-[#F8F8F8] px-8 mx-auto flex flex-wrap xl:grid xl:grid-cols-3  lg:grid lg:grid-cols-2 gap-4 justify-center space-x-4 space-y-4 ">
+
+                <div class="space-y-4 mx-auto md:col-span-full">
+                    <p class="text-[#79716B] text-sm hind-siliguri-regular">আপনি এখনো কোন Lesson Select করেননি।</p>
+                    <h1 class="text-3xl hind-siliguri-regular font-semibold">একটি Lesson Select করুন।</h1>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- modal add -->
+
+        <section>
+            <dialog id="word_details" class="modal">
+                <div id="modal-details" class=" modal-middle md:w-[45rem]  ">
+                    <div class="py-5 px-3 md:m-6 border-2 border-blue-100  rounded-xl">
+                        <h1 class="font-bold md:text-3xl text-xl mb-7 ">Eager (:ইগার)</h1>
+                        <h4 class="font-bold text-xl mb-2 ">Meaning</h4>
+                        <p class="hind-siliguri-regular font-bold mb-7 ">আগ্রহী</p>
+                        <h4 class="font-bold text-xl mb-2">Example</h4>
+                        <p class="mb-7">The kids were eager to open their gifts.</p>
+                        <h4 class="hind-siliguri-regular font-bold mb-2">সমার্থক শব্দ গুলো</h4>
+                        <div>
+                            <button class="btn bg-[#EDF7FF] text-gray-500 ">Enthusiastic</button>
+                            <button class="btn bg-[#EDF7FF] text-gray-500">excited</button>
+                            <button class="btn bg-[#EDF7FF] text-gray-500">keen</button>
+                        </div>
+                    </div>
+                    <div>
+                        <form method="dialog">
+                            <button class="btn bg-[#422AD5] text-white mt-7 rounded-xl ">Complete Learning</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </dialog>
+        </section>
+
+        <!-- Frequently Asked Questions section -->
+        <section id="questionsSection" class="w-10/12 md:-mt-20 -mt-40 mx-auto pt-40 ">
+            <h1 class="text-4xl font-bold pb-20 text-center"><span class="text-[#00bcff]">Frequently</span> Asked
+                Questions</h1>
+
+            <div class="space-y-3">
+                <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">1. The difference between var, let, and const?</div>
+                    <div class="collapse-content text-sm text-gray-500 ">Var is a function-scoped, it can be redeclared
+                        and do not comply with block scope, on the other let and const are block-scoped but the value of
+                        const cannot be changed. Let value can be changed again.</div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">2. The difference between map(), forEach(), and filter()?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-500 ">Map() makes new array and every item changes.
+                        forEach() only executes loop but anything not return. filter() creates a new array with items
+                        that match the condition.</div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">3. Explain arrow functions and how they are different from
+                        regular functions?</div>
+                    <div class="collapse-content text-sm text-gray-500 ">Arrow Function (=>) is a short function syntax
+                        that retains its own this, is used instead of the function keyword, and differs from regular
+                        functions. In regular functions, this changes dynamically, and arguments is an object.</div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">4. How JavaScript Promises work?</div>
+                    <div class="collapse-content text-sm text-gray-500 ">JavaScript Promise is an object, which
+                        asynchronous task returns a result if it succeeds or fails. It can be in three states—pending,
+                        fulfilled, and rejected.</div>
+                </div>
+
+                <div class="collapse collapse-plus bg-gray-100 border border-base-300">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">5. How closures work in JavaScript?</div>
+                    <div class="collapse-content text-sm text-gray-500 ">JavaScript closures occur when a function can
+                        access variables from its outer function, even after the outer function has been executed. It
+                        keeps the data inside the function private and helps with state management.</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footerSection" class="border-t-2  mt-14 border-red-200 ">
+        <section
+            class="w-10/12 mx-auto md:py-20 py-10 flex flex-col md:flex-row space-y-10  justify-between md:items-end">
+            <div class="space-y-3">
+                <div class="flex items-center">
+                    <h2 class="poppins-regular font-semibold">English</h2>
+                    <img src="assets/logo.png" alt="English Janala logo">
+                    <h2 class="tiro-bangla-regular font-semibold">জানালা</h2>
+                </div>
+                <h1 class="font-bold hind-siliguri-regular">ইংরেজি শিখুন সহজে</h1>
+                <p>Providing ED-Tech Applications since 2025</p>
+            </div>
+
+            <div class="space-y-2">
+                <p class="text-[#18181B] text-sm ">Follow us</p>
+                <div class="flex items-center space-x-2">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i><img src="assets/fb-thumb.png" alt="facebook logo"></i>
+                    </a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i><img src="assets/instagram-thumb.png" alt="instagram logo"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i><img src="assets/github-thumb.png" alt="github logo"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="script/index.js"></script>
+    <script src="script/addapi.js"></script>
+</body>
+</html>
